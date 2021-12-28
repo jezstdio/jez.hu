@@ -26,6 +26,7 @@ header {
   overflow: hidden;
   width: 100%;
 }
+
 .card .card-img {
   height: 100%;
   left: 0;
@@ -35,12 +36,16 @@ header {
      object-fit: cover;
   width: 100%;
 }
+
 .card .tags {
   bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   right: 8px;
 }
+
 .card .tags .tag {
   background-color: #760cbc;
   border-radius: 16px;
@@ -48,12 +53,17 @@ header {
   margin-right: 8px;
   padding: 8px 16px;
 }
+
 .card .tags .tag:last-of-type {
   margin-right: 0;
 }
 
 .text-color-accent {
   color: #760cbc;
+}
+
+.text-color-complementary {
+  color: #D9A805;
 }
 
 .text-decoration-color-accent {
@@ -81,4 +91,5 @@ header {
 
 .icon-twitter {
   background-image: url(icons/twitter.svg);
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
