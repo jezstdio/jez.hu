@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --site-height: 100%;
+}
+
+html {
+  background-color: #760cbc;
+}
+
+body {
+  background: linear-gradient(168deg, #760cbc 16%, #ffffff 16%, #ffffff 84%, #760cbc 84%);
+  font-family: "Roboto", sans-serif;
+  min-height: var(--site-height);
+}
+
+header {
+  height: var(--site-height);
+}
+
+.card {
+  background-color: lightgray;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.card .card-img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.card .tags {
+  bottom: 8px;
+  display: flex;
+  position: absolute;
+  right: 8px;
+}
+.card .tags .tag {
+  background-color: #760cbc;
+  border-radius: 16px;
+  color: #ffffff;
+  margin-right: 8px;
+  padding: 8px 16px;
+}
+.card .tags .tag:last-of-type {
+  margin-right: 0;
+}
+
+.text-color-accent {
+  color: #760cbc;
+}
+
+.text-decoration-color-accent {
+  -webkit-text-decoration-color: #760cbc;
+          text-decoration-color: #760cbc;
+}
+
+[class^=icon] {
+  display: block;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  width: 24px;
+}
+
+.icon-github {
+  background-image: url(icons/github.svg);
+}
+
+.icon-linkedin {
+  background-image: url(icons/linkedin.svg);
+}
+
+.icon-twitter {
+  background-image: url(icons/twitter.svg);
+}/*# sourceMappingURL=style.css.map */
