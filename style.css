@@ -3,6 +3,14 @@
   --site-height: 100%;
 }
 
+a {
+  color: #D9A805;
+}
+
+a:hover {
+  color: #760cbc;
+}
+
 html {
   background-color: #760cbc;
 }

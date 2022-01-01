@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-//complementary: #D9A805;
-//accent: #760cbc;
+$complementary: #D9A805;
+$accent: #760cbc;
 
 :root {
     --site-height: 100%;
 }
 
+a {
+    color: $complementary;
+
+   &:hover {
+       color: $accent;
+   } 
+}
+
 html {
-    background-color: #760cbc;
+    background-color: $accent;
 }
 
 body {
-    background: linear-gradient(168deg, #760cbc 16%, #ffffff 16%, #ffffff 84%, #760cbc 84%);
+    background: linear-gradient(168deg, $accent 16%, #ffffff 16%, #ffffff 84%, $accent 84%);
     font-family: "Roboto", sans-serif;
     min-height: var(--site-height);
 }
@@ -46,7 +54,7 @@ header {
         right: 8px;
 
         .tag {
-            background-color: #760cbc;
+            background-color: $accent;
             border-radius: 16px;
             color: #ffffff;
             margin-right: 8px;
@@ -59,9 +67,9 @@ header {
     }
 }
 
-.text-color-accent { color: #760cbc }
+.text-color-accent { color: $accent }
 .text-color-complementary { color: #D9A805 }
-.text-decoration-color-accent {text-decoration-color: #760cbc; }
+.text-decoration-color-accent {text-decoration-color: $accent; }
 
 [class^=icon] {
     display: block;
