@@ -4,21 +4,29 @@
 }
 
 a {
-  color: #D9A805;
+  color: #F0B707;
+  color: #F0B707;
 }
 
 a:hover {
-  color: #760cbc;
+  color: #801ED7;
 }
 
 html {
-  background-color: #760cbc;
+  background-color: #801ED7;
 }
 
 body {
-  background: linear-gradient(168deg, #760cbc 16%, #ffffff 16%, #ffffff 84%, #760cbc 84%);
+  background: linear-gradient(168deg, #801ED7 16%, #ffffff 16%, #ffffff 84%, #801ED7 84%);
   font-family: "Roboto", sans-serif;
   min-height: var(--site-height);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(168deg, #801ED7 16%, #292929 16%, #292929 84%, #801ED7 84%);
+    color: #ffffff;
+  }
 }
 
 header {
@@ -55,7 +63,7 @@ header {
 }
 
 .card .tags .tag {
-  background-color: #760cbc;
+  background-color: #801ED7;
   border-radius: 16px;
   color: #ffffff;
   margin-right: 8px;
@@ -67,16 +75,16 @@ header {
 }
 
 .text-color-accent {
-  color: #760cbc;
+  color: #801ED7;
 }
 
 .text-color-complementary {
-  color: #D9A805;
+  color: #F0B707;
 }
 
 .text-decoration-color-accent {
-  -webkit-text-decoration-color: #760cbc;
-          text-decoration-color: #760cbc;
+  -webkit-text-decoration-color: #801ED7;
+          text-decoration-color: #801ED7;
 }
 
 [class^=icon] {
@@ -90,14 +98,31 @@ header {
 }
 
 .icon-github {
-  background-image: url(icons/github.svg);
+  background-image: url(icons/github--dark.svg);
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon-github {
+    background-image: url(icons/github--light.svg);
+  }
 }
 
 .icon-linkedin {
-  background-image: url(icons/linkedin.svg);
+  background-image: url(icons/linkedin--dark.svg);
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon-linkedin {
+    background-image: url(icons/linkedin--light.svg);
+  }
 }
 
 .icon-twitter {
-  background-image: url(icons/twitter.svg);
+  background-image: url(icons/twitter--dark.svg);
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (prefers-color-scheme: dark) {
+  .icon-twitter {
+    background-image: url(icons/twitter--light.svg);
+  }
+}

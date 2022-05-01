@@ -1,28 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-$complementary: #D9A805;
-$accent: #760cbc;
+$complementary-48: #F0B707;
+$complementary-64: #FACF4D;
+
+$accent-48: #801ED7;
+$accent-64: #A85DE9;
 
 :root {
     --site-height: 100%;
 }
 
 a {
-    color: $complementary;
+    color: $complementary-48;
+        color: $complementary-48;
 
    &:hover {
-       color: $accent;
+       color: $accent-48;
    } 
 }
 
 html {
-    background-color: $accent;
+    background-color: $accent-48;
 }
 
 body {
-    background: linear-gradient(168deg, $accent 16%, #ffffff 16%, #ffffff 84%, $accent 84%);
+    background: linear-gradient(168deg, $accent-48 16%, #ffffff 16%, #ffffff 84%, $accent-48 84%);
     font-family: "Roboto", sans-serif;
     min-height: var(--site-height);
+
+    @media (prefers-color-scheme: dark) {
+        background: linear-gradient(168deg, $accent-48 16%, #292929 16%, #292929 84%, $accent-48 84%);
+        color: #ffffff;
+    }
 }
 
 header {
@@ -54,7 +63,7 @@ header {
         right: 8px;
 
         .tag {
-            background-color: $accent;
+            background-color: $accent-48;
             border-radius: 16px;
             color: #ffffff;
             margin-right: 8px;
@@ -67,9 +76,9 @@ header {
     }
 }
 
-.text-color-accent { color: $accent }
-.text-color-complementary { color: #D9A805 }
-.text-decoration-color-accent {text-decoration-color: $accent; }
+.text-color-accent { color: $accent-48 }
+.text-color-complementary { color: $complementary-48 }
+.text-decoration-color-accent {text-decoration-color: $accent-48; }
 
 [class^=icon] {
     display: block;
@@ -79,6 +88,17 @@ header {
     width: 24px;
 }
 
-.icon-github { background-image: url(icons/github.svg) }
-.icon-linkedin { background-image: url(icons/linkedin.svg) }
-.icon-twitter { background-image: url(icons/twitter.svg) }
+.icon-github {
+    background-image: url(icons/github--dark.svg);
+    @media (prefers-color-scheme: dark) { background-image: url(icons/github--light.svg) }
+}
+
+.icon-linkedin {
+    background-image: url(icons/linkedin--dark.svg);
+    @media (prefers-color-scheme: dark) { background-image: url(icons/linkedin--light.svg) }
+}
+
+.icon-twitter {
+    background-image: url(icons/twitter--dark.svg);
+    @media (prefers-color-scheme: dark) { background-image: url(icons/twitter--light.svg) }
+}
