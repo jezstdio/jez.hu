@@ -1,104 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-$complementary-48: #F0B707;
-$complementary-64: #FACF4D;
+$complementary-48: #f0b707;
+$complementary-64: #facf4d;
 
-$accent-48: #801ED7;
-$accent-64: #A85DE9;
+$accent-48: #801ed7;
+$accent-64: #a85de9;
 
 :root {
-    --site-height: 100%;
+  --site-height: 100%;
 }
 
 a {
-    color: $complementary-48;
-        color: $complementary-48;
+  color: $complementary-48;
+  color: $complementary-48;
 
-   &:hover {
-       color: $accent-48;
-   } 
+  &:hover {
+    color: $accent-48;
+  }
 }
 
 html {
-    background-color: $accent-48;
+  background-color: $accent-48;
 }
 
 body {
-    background: linear-gradient(168deg, $accent-48 16%, #ffffff 16%, #ffffff 84%, $accent-48 84%);
-    font-family: "Roboto", sans-serif;
-    min-height: var(--site-height);
+  background: linear-gradient(
+    168deg,
+    $accent-48 16%,
+    #ffffff 16%,
+    #ffffff 84%,
+    $accent-48 84%
+  );
+  font-family: "Roboto", sans-serif;
+  min-height: var(--site-height);
 
-    @media (prefers-color-scheme: dark) {
-        background: linear-gradient(168deg, $accent-48 16%, #292929 16%, #292929 84%, $accent-48 84%);
-        color: #ffffff;
-    }
+  @media (prefers-color-scheme: dark) {
+    background: linear-gradient(
+      168deg,
+      $accent-48 16%,
+      #292929 16%,
+      #292929 84%,
+      $accent-48 84%
+    );
+    color: #ffffff;
+  }
 }
 
 header {
-    height: var(--site-height);
+  height: var(--site-height);
 }
 
 .card {
-    background-color: lightgray;
-    border-radius: 16px;
-    margin-bottom: 16px;
-    padding-bottom: 100%;
-    position: relative;
-    overflow: hidden;
+  background-color: lightgray;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  .card-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
     width: 100%;
+  }
 
-    .card-img {
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        width: 100%;
+  .tags {
+    bottom: 8px;
+    display: flex;
+    position: absolute;
+    right: 8px;
+
+    .tag {
+      background-color: $accent-48;
+      border-radius: 16px;
+      color: #ffffff;
+      margin-right: 8px;
+      padding: 8px 16px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
-
-    .tags {
-        bottom: 8px;
-        display: flex;
-        position: absolute;
-        right: 8px;
-
-        .tag {
-            background-color: $accent-48;
-            border-radius: 16px;
-            color: #ffffff;
-            margin-right: 8px;
-            padding: 8px 16px;
-
-            &:last-of-type {
-                margin-right: 0;
-            }
-        }
-    }
+  }
 }
 
-.text-color-accent { color: $accent-48 }
-.text-color-complementary { color: $complementary-48 }
-.text-decoration-color-accent {text-decoration-color: $accent-48; }
+.text-color-accent {
+  color: $accent-48;
+}
+.text-color-complementary {
+  color: $complementary-48;
+}
+.text-decoration-color-accent {
+  text-decoration-color: $accent-48;
+}
 
-[class^=icon] {
-    display: block;
-    height: 24px;
-    object-fit: contain;
-    object-position: center;
-    width: 24px;
+[class^="icon"] {
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 24px;
+  object-fit: contain;
+  object-position: center;
+  width: 24px;
 }
 
 .icon-github {
-    background-image: url(icons/github--dark.svg);
-    @media (prefers-color-scheme: dark) { background-image: url(icons/github--light.svg) }
+  background-image: url(icons/github--dark.svg);
+  @media (prefers-color-scheme: dark) {
+    background-image: url(icons/github--light.svg);
+  }
 }
 
 .icon-linkedin {
-    background-image: url(icons/linkedin--dark.svg);
-    @media (prefers-color-scheme: dark) { background-image: url(icons/linkedin--light.svg) }
+  background-image: url(icons/linkedin--dark.svg);
+  @media (prefers-color-scheme: dark) {
+    background-image: url(icons/linkedin--light.svg);
+  }
 }
 
 .icon-twitter {
-    background-image: url(icons/twitter--dark.svg);
-    @media (prefers-color-scheme: dark) { background-image: url(icons/twitter--light.svg) }
+  background-image: url(icons/twitter--dark.svg);
+  @media (prefers-color-scheme: dark) {
+    background-image: url(icons/twitter--light.svg);
+  }
+}
+
+.icon-telegram {
+  background-image: url(icons/telegram--dark.svg);
+  @media (prefers-color-scheme: dark) {
+    background-image: url(icons/telegram--light.svg);
+  }
 }

@@ -4,27 +4,25 @@
 }
 
 a {
-  color: #F0B707;
-  color: #F0B707;
+  color: #f0b707;
+  color: #f0b707;
 }
-
 a:hover {
-  color: #801ED7;
+  color: #801ed7;
 }
 
 html {
-  background-color: #801ED7;
+  background-color: #801ed7;
 }
 
 body {
-  background: linear-gradient(168deg, #801ED7 16%, #ffffff 16%, #ffffff 84%, #801ED7 84%);
+  background: linear-gradient(168deg, #801ed7 16%, #ffffff 16%, #ffffff 84%, #801ed7 84%);
   font-family: "Roboto", sans-serif;
   min-height: var(--site-height);
 }
-
 @media (prefers-color-scheme: dark) {
   body {
-    background: linear-gradient(168deg, #801ED7 16%, #292929 16%, #292929 84%, #801ED7 84%);
+    background: linear-gradient(168deg, #801ed7 16%, #292929 16%, #292929 84%, #801ed7 84%);
     color: #ffffff;
   }
 }
@@ -42,7 +40,6 @@ header {
   overflow: hidden;
   width: 100%;
 }
-
 .card .card-img {
   height: 100%;
   left: 0;
@@ -52,42 +49,38 @@ header {
      object-fit: cover;
   width: 100%;
 }
-
 .card .tags {
   bottom: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   right: 8px;
 }
-
 .card .tags .tag {
-  background-color: #801ED7;
+  background-color: #801ed7;
   border-radius: 16px;
   color: #ffffff;
   margin-right: 8px;
   padding: 8px 16px;
 }
-
 .card .tags .tag:last-of-type {
   margin-right: 0;
 }
 
 .text-color-accent {
-  color: #801ED7;
+  color: #801ed7;
 }
 
 .text-color-complementary {
-  color: #F0B707;
+  color: #f0b707;
 }
 
 .text-decoration-color-accent {
-  -webkit-text-decoration-color: #801ED7;
-          text-decoration-color: #801ED7;
+  text-decoration-color: #801ed7;
 }
 
 [class^=icon] {
+  background-position: center;
+  background-repeat: no-repeat;
   display: block;
   height: 24px;
   -o-object-fit: contain;
@@ -100,7 +93,6 @@ header {
 .icon-github {
   background-image: url(icons/github--dark.svg);
 }
-
 @media (prefers-color-scheme: dark) {
   .icon-github {
     background-image: url(icons/github--light.svg);
@@ -110,7 +102,6 @@ header {
 .icon-linkedin {
   background-image: url(icons/linkedin--dark.svg);
 }
-
 @media (prefers-color-scheme: dark) {
   .icon-linkedin {
     background-image: url(icons/linkedin--light.svg);
@@ -120,9 +111,17 @@ header {
 .icon-twitter {
   background-image: url(icons/twitter--dark.svg);
 }
-
 @media (prefers-color-scheme: dark) {
   .icon-twitter {
     background-image: url(icons/twitter--light.svg);
+  }
+}
+
+.icon-telegram {
+  background-image: url(icons/telegram--dark.svg);
+}
+@media (prefers-color-scheme: dark) {
+  .icon-telegram {
+    background-image: url(icons/telegram--light.svg);
   }
 }
